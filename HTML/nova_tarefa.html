@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Nova Tarefa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/NOVA.CSS">
+    <script src="../JS/nova.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-tasks"></i> Cadastrar Nova Tarefa</h1>
+        <form id="taskForm">
+            <div class="form-group">
+                <label for="taskName">Nome da Tarefa:</label>
+                <input type="text" class="form-control" id="taskName" required placeholder="Digite o nome da tarefa">
+            </div>
+            <div class="form-group">
+                <label for="taskDescription">Descrição:</label>
+                <textarea class="form-control" id="taskDescription" required placeholder="Digite uma descrição da tarefa"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="taskStatus">Status:</label>
+                <select class="form-control" id="taskStatus">
+                    <option value="to-do">A Fazer</option>
+                    <option value="in-progress">Fazendo</option>
+                    <option value="waiting-review">Feito</option>
+                    <option value="pending-deploy">Para</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Cadastrar Tarefa</button>
+            <button><a href="tarefas.html" class="btn btn-secondary btn-block">Voltar</a></button>
+        </form>
+    </div>
+</body>
+</html>

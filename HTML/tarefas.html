@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Kanban</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/TAREFA.CSS">
+    <script src="tarefas.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h4>Meu Time</h4>
+        <a href="#">Home</a>
+        <a href="/HTML.INDEX/index.html"  type="button" class="text-danger">Sair</a>
+    </div>
+
+    <div class="header">
+        <h1>farofeiros</h1>
+        <a href="nova_tarefa.html" class="btn btn-new-task">Nova Tarefa</a>
+    </div>
+    
+    <div class="kanban-container" id="kanban-board">
+        <div class="column" data-status="to-do">
+            <h4>A Fazer</h4>
+            <div id="tasks-to-do"></div>
+        </div>
+        <div class="column" data-status="in-progress">
+            <h4>Fazendo</h4>
+            <div id="tasks-in-progress"></div>
+        </div>
+        <div class="column" data-status="waiting-review">
+            <h4>Feito</h4>
+            <div id="tasks-done"></div>
+        </div>
+        <div class="column" data-status="pending-deploy">
+            <h4>Testes</h4>
+            <div id="tasks-pending"></div>
+        </div>
+    </div>
+</body>
+</html>

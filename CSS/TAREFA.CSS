@@ -1,0 +1,78 @@
+body {
+    background-color: #282c34; /* Fundo escuro */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #21252b; /* Painel lateral escuro */
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #61dafb; /* Efeito de hover */
+}
+
+.header {
+    padding: 20px;
+    background-color: #21252b; /* Cabeçalho escuro */
+    text-align: center;
+    position: relative;
+    margin-left: 250px; /* Deixar espaço para a sidebar */
+}
+
+.column {
+    background-color: #333; /* Cor das colunas */
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    min-height: 300px; /* Altura mínima das colunas */
+    flex: 1;
+}
+
+h4 {
+    text-align: center;
+    color: #61dafb; /* Cor do título das colunas */
+}
+
+.task {
+    background-color: #4c4f54; /* Cor das tarefas */
+    border: 1px solid #6c757d; /* Borda das tarefas */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+}
+
+.task:hover {
+    background-color: #5a5d60; /* Efeito de hover nas tarefas */
+}
+
+.btn-new-task {
+    margin: 20px 0;
+    background-color: #61dafb; /* Botão novo estilo */
+    color: black;
+    border: none;
+}
+
+.btn-new-task:hover {
+    background-color: #21a1f1; /* Efeito de hover no botão */
+}
+
+.kanban-container {
+    display: flex; /* Flexbox para as colunas */
+    margin-left: 250px; /* Espaço para a sidebar */
+}
